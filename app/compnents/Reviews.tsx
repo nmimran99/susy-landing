@@ -1,0 +1,61 @@
+import { GetStaticProps } from "next";
+import Image from "next/image";
+
+const reviews = [{
+    "review": "היי חברה, שמי טליה ואני יותר משמחה וגאה להמליץ על סוזי ועל המכינה שלה. אני כרגע לומדת רפואה שנה א' ב'לה ספיאנצה' ברומא והדרך לא הייתה קלה אבל האמנתי שאכנס, לא כי אני האמנתי או הייתי בטוחה בעצמי כל הזמן, אלא כי סוזי האמינה בי. היא לימדה אותי את כל בסיס הרפואה בשפה זרה לחלוטין, והיא לימדה אותי חומרים שלא היה לי בסיס אליהם בהתחלה אבל בכל זאת הצלחתי. היא הייתה שם איתי ולצידי בכל שלב בדרך מהרגע הראשון ואפילו עד עכשיו! זו אישה עם ניסיון רחב בשפה האיטלקית וידע אדיר. לב רחב ורצון אמיתי לסייע לכל אחד ואחת מהסטודנטים שלה להגשים את החלום שלו, וזה אומר שהיא משקיעה ומאמינה בסטודנטים שלה- בכל אחד, את כל מה שהיא יכולה. אני יכולה להבטיח עם יד על הלב שעם השקעה, התמדה וחריצות מהצד שלכם (כי אין מה לעשות, צריך), סוזי תרים את הידע השפתי והמדעי שלכם לרמה אחרת ותתן לכם צ'אנס אמיתי להתקבל ללימודים שאתם רוצים.  אני קוראת לה 'אמא של הסטודנטים' אני מאמינה שחבריי למכינה יסכימו איתי. תודה סוזי, ובהצלחה לכולם!",
+    "from": "טליה וייץ",
+    "image": "/images/reviewers/talya.jpg"
+}, {
+    "review": "אני איתן, סטודנט שנה שלישית לרפואת שיניים בפאביה. התחלתי את המסע בלמידה עצמאית למבחן האיימט אך לא הצלחתי להיכנס לרשימה😢. אחרי שהתאפסתי על עצמי מהבאסה, החלטתי לברר על המסלול באיטלקית ונתקלתי במכינה של סוזי והחלטתי ללכת על זה😎 התוכן הלימודי היה מספיק בהחלט! השיעורים והמצגות היו לעניין ובאיכות גבוהה, תרגלנו המון סימולציות וקיבלנו הכוונה וליווי יד ביד שגרמו למבחני כניסה להיות הרבה פחות מפחידים (לעומת האיימט השחור שהיה לי😅).אסכם בזה שסוזי אישה מדהימה וחגורה שחורה בלהכין סטודנטים ללימודים 💜💯🔝🔥🥋ממליץ בחום למי שמחפש קורס הכנה איכותי ומשפחתי ולא חארטה שיווקית🔥בהצלחה לכולם ונתראה באיטליה",
+    "from": "איתן ברלב",
+    "image": "/images/reviewers/eitanbarlev.jpg"
+}, {
+    "review": "בשנה שעברה גם אני למדתי אצל סוזי והתכוננתי למבחן האמיסיונה, המכינה הייתה מקיפה, מעמיקה ומותאמת למבחן הכניסה בדיוק. גם כשסוזי הייתה בהריון מתקדם תמיד הייתה זמינה לנו, וזכינו למלא יחס אישי וליווי לאורך כל הדרך. בקיצור סוזי את וונדר וומן של ממש!!🥹❤️סוזי ללא ספק זכיתי שהיית המורה שלי! ממליצה בחום!",
+    "from": "שריי שדה",
+    "image": "/images/reviewers/saraisade.jpg"
+}, {
+    "review": "היה זה לפני מעט יותר משנה שהתקשרתי לסוזי עם חלום לא נפוץ במיוחד: ״אני רוצה ללמוד פזיותרפיה באיטליה״ אמרתי לה. ״אמנם אני לא מכירה סטודנטים שלומדים שם פזיותרפיה, אבל לא תהיה שום בעיה!!״ ככה היא אמרה לי. ומבחינתי השיחה הזאת הספיקה כדי שאחליט שסוזי תכין אותי לקראת המסע של הלימודים באיטליה.סוזי היא לא רק מורה בחסד עליון: מוכשרת, מקצוענית, משקיענית וקפדנית. אבל זה לא הכל. היא לפני הכל אדם רגיש, אכפתי ודואג. מלווה יד ביד בתהליך מרגש ורווי בהמון סימני שאלה. היא דאגה תמיד לייצר עבורנו ודאות ולתמוך בחיוך ואופטימיות שמאפיינת אותה. עשתה עבורנו מעל והרבה מעבר למה שאפשר לצפות ואני אגלה לכם סוד - עד היום היא זמינה עבורי לתקן מכתבים לפרופסורים!!בהצלחה לכל החברים החדשים בקהילת Mechina con Susy, מחכים לכם באיטליה",
+    "from": "שי קיפרווסר",
+    "image": "/images/reviewers/shaykiper.jpg"
+}, {
+    "review": "אני אישית מאוד הייתי נעולה מאוד על לימודי רפואה וניסיתי למצוא את הדרך הכי מהירה להגיע ליעד הזה. לצערי הרב הדרך לא הייתה פשוטה . ניגשתי למבחן הIMAT ולא התקבלתי. זאת הייתה שנה מאתגרת במילים מועטות. למזלי הרב הכרתי את סוזי והיא ליוותה אותי יד ביד מתחילת המסע שלי בזמנו עוד שניסיתי ללמוד עצמאית לIMAT ועד היום שהתקבלתי ללימודי הרפואה . קשה לי לסכם במילים את כמות הסבלנות,הנתינה והאיכפתיות שזכיתי לקבל ממנה:שיחות ארוכות על הבירוקרטיה האיטלקית, שיחות מוטיבציה , שיעורים פרטיים לחזוק ועוד אינספור דברים .. סוזי פשוט יודעת לתת מענה ועושה את זה מכל הלב. מאחלת לכם שתהיה  לכם מורה כמו סוזי!",
+    "from": "עדן ברנשטיין",
+    "image": "/images/reviewers/edenbern.jpg"
+}, {
+    "review": "סוזי ליוותה אותי במשך שנה שלמה, חצי שנה בלימוד השפה האיטלקית והכנה למבחן השפה וחצי שנה נוספת ללימוד המקצועות והכנה למבחן האמיסיונה. סוזי מורה מנוסה מאוד, לימדה בעבר גם במכון לתרבות איטלקית ויודעת להעביר את השיעורים בצורה חווייתית ומעניינת, ומעל הכל זמינה כמעט בכל זמן אפשרי מעבר לזמן הקצוב של השיעורים, ולא פחות חשוב מזה, היא מלווה בכל שלב ושלב בבירוקרטיה האיטלקית הקשוחה ודואגת תמיד לתזכר ולעזור בכל מה שניתן מבחינתה🙏🏼 ואפילו אחרי שהסתיים הקורס- עמדה לרשותינו בהרשמה הסופית ואני יכול להגיד בפה מלא שהיא הרבה מעבר למורה עבורי, וניכר שהיא נותנת לתלמידים שלה את הלב והנשמה. אני זכיתי ללמוד אצלה ואני מקנא במי שעוד יבחר בה.",
+    "from": "עדן שיטרית",
+    "image": "/images/reviewers/edenshit.jpg"
+}, {
+    "review": "אשמח להמליץ בחום על סוזי, נכנסתי השנה ללימודים ברומא - מאוד נהנתי בקורס, השיעורים מועברים בצורה טובה, למדנו נקודות מאוד ספציפיות שהיו במבחן בסופו של דבר מבלי לטחון חומר סתם - מאוד מעשי, ניכר מאוד הוותק במקצוע והמקצועיות. אין מה לדבר בכלל על היחס האישי והחם - סוזי תמכה וסייעה בכל דבר גם לאחר שעות הלמידה, לפני קורס קודם כל אישיות מדהימה. הגעתי לקורס אחרי שלא עברתי את האיימט, מעט ביטחון והרבה אכזבה מבחינת הלימודים בחול - בסופו של דבר אני שמח שהמליצו לי על סוזי ושזכיתי להיות מבין תלמידיה",
+    "from": "מור לוי",
+    "image": "/images/reviewers/morlevi.jpg"
+}]
+
+export default function Reviews() {
+
+    console.log(reviews)
+
+    return (
+        <div>
+            <div className="rounded-3xl rounded-xl pb-6 xl:py-6 mx-auto w-11/12 xl:w-1/2">
+            <div className="text-right text-3xl font-bold px-4 pb-4">
+                סטודנטים מספרים
+            </div>
+            <div className='items-center text-right '>
+               {
+                reviews.map((r,i) => 
+                <div className=" border rounded-xl px-4 py-8 my-4">
+                    <Image src={r.image} alt="" width={100} height={100} className="rounded-full w-36 mx-auto" />
+                    <div>
+                        <div className="font-bold text-xl text-center py-4">{r.from}</div>
+                        <div className="text-center">{r.review}</div>
+                    </div>
+                    
+                </div>)
+               }
+            </div>
+        </div>
+        </div>
+        
+    )
+}
