@@ -32,9 +32,6 @@ const reviews = [{
 }]
 
 export default function Reviews() {
-
-    console.log(reviews)
-
     return (
         <div>
             <div className="rounded-3xl rounded-xl pb-6 xl:py-6 mx-auto w-11/12 xl:w-1/2">
@@ -44,7 +41,7 @@ export default function Reviews() {
             <div className='items-center text-right '>
                {
                 reviews.map((r,i) => 
-                <div className=" border rounded-xl px-4 py-8 my-4">
+                <div className=" border rounded-xl px-4 py-8 my-4" key={i}>
                     <Image src={r.image} alt="" width={100} height={100} className="rounded-full w-36 mx-auto" />
                     <div>
                         <div className="font-bold text-xl text-center py-4">{r.from}</div>

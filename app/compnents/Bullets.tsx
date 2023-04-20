@@ -18,7 +18,7 @@ export default function Bullets() {
         <div className="w-full flex flex-col items-center xl:mt-12 mb-12">
             {
                 bullets.map((b, i) =>
-                    <div className={`flex items-center justify-end text-right rounded-xl xl:w-2/5 m-2 h-32 ${b.gradiant} text-white shadow-xl`}>
+                    <div className={`flex items-center justify-end text-right rounded-xl xl:w-2/5 m-2 h-32 ${b.gradiant} text-white shadow-xl`} key={i}>
                         <div className="text-xl my-3 px-4 font-semibold">
                             {b.content}
                         </div>

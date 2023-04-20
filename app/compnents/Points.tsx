@@ -20,7 +20,7 @@ export default function Points() {
             <div className='w-full xl:flex items-center text-right'>
                 {
                     points.map((p,i) => 
-                        <div className="border border-white rounded-xl my-4 text-center w-60 h-80 mx-4 flex flex-col items-center shadow-xl">
+                        <div className="border border-white rounded-xl my-4 text-center w-60 h-80 mx-4 flex flex-col items-center shadow-xl" key={i}>
                             <Image src={p.icon} alt="" width="60" height="60" className="my-2"/>
                             <div className="text-xl p-4">{p.header}</div>
                             <div className="text-md px-2">{p.content}</div>
