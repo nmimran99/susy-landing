@@ -37,14 +37,16 @@ export default function Upcoming() {
                             שעות המפגשים הינן 9 בבוקר ועד 12:15 בצהריים.
                         </div>
                         <div>
-                            ימי הקורס הינם א', ג', ה' עד ה - 3.8.2023 ולאחר מכן א', ג', ד', ה' עד לסוף הקורס.
+                            ימי הקורס הינם א&apos;, ג&apos;, ה&apos; עד ה - 3.8.2023 ולאחר מכן א&apos;, ג&apos;, ד&apos;, ה&apos; עד לסוף הקורס.
                         </div>
                     </div>
                     <div className="border rounded-xl w-full text-lg rounded-xl py-2 mt-4 xl:w-1/2">
                         <table className="text-right w-full">
                             <thead className="">
-                                <th className="px-4 w-1/2">נושא</th>
-                                <th className="px-4 w-1/2">מספר שעות</th>  
+                                <tr>
+                                    <th className="px-4 w-1/2">נושא</th>
+                                    <th className="px-4 w-1/2">מספר שעות</th>  
+                                </tr>    
                             </thead>
                             <tbody>
                                 {
