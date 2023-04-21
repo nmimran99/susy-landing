@@ -4,6 +4,7 @@ import Footer from "./compnents/Footer";
 import Points from "./compnents/Points";
 import Reviews from "./compnents/Reviews";
 import Top from "./compnents/Top";
+import Upcoming from "./compnents/Upcoming";
 
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <Top />
       <Points />
       <Bullets />
+      <Upcoming />
       <Contact />
       <Reviews />
       <Footer />
