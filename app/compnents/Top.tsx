@@ -24,7 +24,7 @@ export default function Top() {
                         <a className="bg-blue-600 text-white w-max rounded-full flex items-center justify-center px-2 py-1.5 mx-auto my-4" href="https://www.facebook.com/groups/8745802385460525">
                             <Image src="/icons/Facebook.svg" width="32" height="32" alt="wh" />
                             <div className="font-bold px-3">
-                                הצטרפו אצלינו לקבוצת הפייסבוק
+                                הצטרפו אלינו לקבוצת הפייסבוק
                             </div>
                         </a>
                     </div>
