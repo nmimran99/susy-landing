@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Top() {
     return (
         <div className="relative h-screen">
-            <Image src="/images/venice1.jpg" height="1000" width="1000" alt="" className="w-screen h-screen absolute top-100 z-0" />
+            <Image src="/images/venice4.jpg" height="1000" width="1000" alt="" className="w-screen h-screen absolute top-100 z-0" />
             <div className='w-full flex flex-col items-center text-right absolute z-10 h-screen'>
                 <Image src="/images/susy_logo1.png" height="300" width="300" alt="" className="w-60 xl:w-80 xl:mb-4 mt-8 xl:mt-20" />
                 <div className='flex justify-center items-center xl:my-4 my-2'>
