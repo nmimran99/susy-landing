@@ -36,6 +36,10 @@ const reviews = [{
     "review": "ממליצה בחום על סוזי! מורה מקצועית, מנוסה, משקיענית ואכפתית. שנותנת לא רק מנסיונה, אלא גם מהלב והנשמה, בשביל כל אחד מהסטודנטים שלומדים אצלה.  מרוצה מהאופן שבו עזרה לי להתכונן למבחני הקבלה לרפואה ובכלל ללמודים באוניברסיטה בשפה האיטלקית. תודה סוזי!❤",
     "from": "הגר קצמן",
     "image": "/images/reviewers/hagarkatzman.jpg"
+}, {
+    "review": "היי, מי שמתלבט לגבי לימודי רפואה באיטליה, ממליצה לכם בעיניים עצומות על המכינה של סוזי, עשיתי איתה מכינת השפה והקורס למבחן קבלה שנה שעברה והתקבלתי בין הראשונים באוניברסטת לה סאפיינצה רומא, אני לומדת באיטלקית וכבר בסמסטר השני שלי, ועדיין בקשר טוב עם סוזי כי היא בן אדם מדהים ונדיב ומקצועני ברמות, הרבה פעמים אני עדיין חוזרת על הסיכומים שלי ונעזרת בהם מרוב שהם היו ברמה גבוהה וטובה.  המורה איטלקיה במקור עם וותק של המון שנים ומקצוענית ברמות. הקורס זרם בצורה חלקה, התקמדנו יפה בחומר והיא תמיד היתה שם כדי להשלים פערים ולחזק לנו את החומר התיאורטי על ידי תרגול ושאלות. ממליצה בחום רב, היה לי ניסיון עם מכינות אחרות, אז אני יודעת להשוות טוב, והבנתי באמת כמה שהמכינה הזו מקצוענית ועל רמה, וסוזי כבן אדם היא בכלל מדהימה וכמו אמא❤ לכל ספק, שאלה, בירור או  סתם לשוחח עם סטודנטים לרפואה, מוזמנים לפנות אליי בכיף, בהצלחה לכולם! ❤",
+    "from": "ליאן עובייד",
+    "image": "/images/reviewers/lianovaied.jpg"
 }]
 
 const gradiants = ["from-indigo-500 to-emerald-500", "bg-gradient-to-r from-amber-500 to-pink-500", "bg-gradient-to-r from-pink-400 to-blue-400"];
@@ -53,7 +57,7 @@ export default function Reviews() {
                             <div className={`bg-gradient-to-r ${gradiants[i % 3]} rounded-xl my-4 p-2`} key={i}>
                                 <div className="border rounded-lg px-4 py-8 bg-white" >
                                     <div className={`bg-gradient-to-r ${gradiants[i % 3]} w-[172px] h-[172px] flex justify-center items-center rounded-full mx-auto`}>
-                                        <Image src={r.image} alt="" width={100} height={100} className="rounded-full w-[160px] h-[160px] border border-white border-4" />
+                                        <Image src={r.image} alt="" width={100} height={100} className="rounded-full w-[160px] h-[160px] border border-white border-4 object-cover" />
                                     </div>
                                     <div>
                                         <div className="font-bold text-xl text-center py-4">{r.from}</div>
