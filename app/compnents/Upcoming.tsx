@@ -11,7 +11,7 @@ const upcomingCourse = [{
     subject: "מתמטיקה",
     hours: 40
 }, {
-    subject: "לוגיקה",
+    subject: "פיזיקה",
     hours: 40
 }, {
     subject: "סה\"כ",
@@ -20,7 +20,7 @@ const upcomingCourse = [{
 
 export default function Upcoming() {
     return (
-        <div className="direction-rtl border w-11/12 xl:w-2/5 rounded-xl mx-auto">
+        <div className="direction-rtl border w-11/12 lg:w-3/5 xl:w-2/5 rounded-xl mx-auto shadow-xl">
             <div className="rounded-3xl rounded-xl pb-6 xl:py-6 w-11/12  mx-auto">
                 <div className="text-right text-3xl font-bold py-4">
                     הקורס הקרוב - 30.4.2023
