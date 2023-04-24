@@ -7,7 +7,7 @@ export default function Contact() {
             <div className="flex flex-col justify-center items-center bg-white relative z-10 rounded-lg">
                 <Image src="/images/susy.jpg" alt="" width="100" height="100" className="rounded-full w-32 shadow-xl" />
                 <div className="py-4 text-xl font-bold w-11/12 text-center">
-                    בואו ללמוד עם סוזי והתחילו את דרכם להצלחה
+                    בואו ללמוד עם סוזי והתחילו את דרככם להצלחה
                 </div>
                 <div>
                     <div>
