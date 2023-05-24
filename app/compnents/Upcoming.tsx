@@ -23,7 +23,7 @@ export default function Upcoming() {
         <div className="direction-rtl border w-11/12 lg:w-3/5 xl:w-2/5 rounded-xl mx-auto shadow-xl">
             <div className="rounded-3xl rounded-xl pb-6 xl:py-6 w-11/12  mx-auto">
                 <div className="text-right text-3xl font-bold py-4">
-                    הקורס הקרוב - 30.4.2023
+                    הקורס הקרוב - 12.6.2023
                 </div>
                 <div className="flex flex-col xl:items-start">
                     <div className="text-right">
@@ -37,7 +37,7 @@ export default function Upcoming() {
                             שעות המפגשים הינן 9 בבוקר ועד 12:15 בצהריים.
                         </div>
                         <div>
-                            ימי הקורס הינם א&apos;, ג&apos;, ה&apos; עד ה - 3.8.2023 ולאחר מכן א&apos;, ג&apos;, ד&apos;, ה&apos; עד לסוף הקורס.
+                        ימי הקורס הינם ב&apos;, ג&apos;, ד&apos;, ה&apos;.
                         </div>
                     </div>
                     <div className="border rounded-xl w-full text-lg rounded-xl py-2 mt-4 xl:w-1/2">
