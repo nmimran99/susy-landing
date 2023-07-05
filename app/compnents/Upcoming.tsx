@@ -23,8 +23,18 @@ export default function Upcoming() {
         <div className="direction-rtl border w-11/12 lg:w-3/5 xl:w-2/5 rounded-xl mx-auto shadow-xl">
             <div className="rounded-3xl rounded-xl pb-6 xl:py-6 w-11/12  mx-auto">
                 <div className="text-right text-3xl font-bold py-4">
-                    הקורס הקרוב - 12.6.2023
+                    הקורס הקרוב - קיץ-סתיו 2023
+                    <div className="pt-2 flex">
+                        <div className="text-center text-xs rounded-full px-4 h-6 pb-0.5 text-white bg-red-500 w-max ml-1 flex items-center">
+                            מותנה במספר נרשמים
+                        </div>
+                        <div className="text-center text-xs rounded-full px-4 h-6 pb-0.5 text-white bg-blue-500 w-max ml-1 flex items-center">
+                            לניגשים למועד אפריל 2024
+                        </div>
+                    </div>
+                    
                 </div>
+               
                 <div className="flex flex-col xl:items-start">
                     <div className="text-right">
                         <div className="text-lg font-semibold">
