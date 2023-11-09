@@ -21,7 +21,7 @@ const upcomingCourse = [{
 export default function Upcoming() {
     return (
         <div className="direction-rtl border w-11/12 lg:w-3/5 xl:w-2/5 rounded-xl mx-auto shadow-xl">
-            <div className="rounded-3xl py-4 w-11/12  mx-auto flex flex-col gap-2">
+            <div className="rounded-3xl p-6 mx-auto flex flex-col gap-2">
                 <div className="w-full border border-gray-30 rounded-lg">
                     <div className="bg-blue-600 text-white rounded-t-lg p-2">
                         לניגשים למועד אפריל 2024
