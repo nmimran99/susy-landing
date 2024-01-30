@@ -23,34 +23,6 @@ export default function Upcoming() {
         <div className="direction-rtl border w-11/12 lg:w-3/5 xl:w-2/5 rounded-xl mx-auto shadow-xl">
             <div className="rounded-3xl p-6 mx-auto flex flex-col gap-2">
                 <div className="w-full rounded-lg">
-                    <div className="bg-blue-600 text-white rounded-t-lg p-2">
-                        לניגשים למועד אפריל 2024
-                    </div>
-                    <div className="p-2 border border-gray-300 rounded-b-lg">
-                        <div>
-                            קורס מקצועות מדעיים (איטלקית)
-                        </div>
-                        <div className="flex gap-2 py-2 flex-wrap">
-                            <InfoBox 
-                                label="תאריך התחלה"
-                                text=" 01.01.2024"
-                            />
-                            <InfoBox 
-                                label="תאריך סיום"
-                                text=" 09.04.2024"
-                            />
-                            <InfoBox 
-                                label="מספר פעמים בשבוע"
-                                text="4-5"
-                            />
-                            <InfoBox 
-                                label="תאריך סיום הרשמה"
-                                text="17.12.2023"
-                            />
-                        </div>
-                    </div>
-                </div>
-                <div className="w-full rounded-lg">
                     <div className="bg-violet-600 text-white rounded-t-lg p-2 ">
                         לניגשים למועדי 2025
                     </div>
@@ -61,7 +33,7 @@ export default function Upcoming() {
                         <div className="flex gap-2 py-2 flex-wrap">
                         <InfoBox 
                                 label="תאריך התחלה"
-                                text="30.04.2024"
+                                text="01.05.2024"
                             />
                             <InfoBox 
                                 label="תאריך סיום"
