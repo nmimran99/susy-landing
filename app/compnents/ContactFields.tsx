@@ -46,9 +46,10 @@ export default function ContactFields({ className }: { className?: string }) {
     }
 
     if (details.hidden != "") return;
-    const res = await fetch("/api/insertLead", {
-      method: "POST",
-      body: JSON.stringify(details)
+    const res = await supabase.from("leads").insert({
+      name: details.name, 
+      email: details.email,
+      phoneNumber: details.phoneNumber.replaceAll("-", "")
     })
     if (res.status === 500) {
       setSendStatus(3)
