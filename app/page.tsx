@@ -1,5 +1,6 @@
 import Bullets from "./compnents/Bullets";
 import Contact from "./compnents/Contact";
+import ContactFields from "./compnents/ContactFields";
 import Footer from "./compnents/Footer";
 import Points from "./compnents/Points";
 import Reviews from "./compnents/Reviews";
@@ -12,6 +13,7 @@ export default function Home() {
     <div>
       <Top />
       <Points />
+      <ContactFields />
       <Bullets />
       <Upcoming />
       <Contact />
