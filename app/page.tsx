@@ -15,7 +15,7 @@ export default function Home() {
       <Points />
       <ContactFields />
       <Bullets />
-      <Upcoming />
+      {/* <Upcoming /> */}
       <Contact />
       <Reviews />
       <Footer />
