@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Navbar from './compnents/Navbar'
 import './globals.css'
 import { GoogleTagManager } from '@next/third-parties/google' 
@@ -14,7 +15,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="he" dir="rtl">
-      <GoogleTagManager gtmId="'GTM-KCD7KWQC" />
+      <Head>
+        <GoogleTagManager gtmId="GTM-KCD7KWQC" />
+      </Head>
       <body>
         <Navbar />
         {children}
