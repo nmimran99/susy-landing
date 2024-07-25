@@ -1,7 +1,8 @@
-import Head from 'next/head'
+
 import Navbar from './compnents/Navbar'
 import './globals.css'
-import { GoogleTagManager } from '@next/third-parties/google' 
+import Analytics from "@/app/compnents/GtmComponent"
+import { Suspense } from 'react'
 
 export const metadata = {
   title: 'Medicina con Susy',
@@ -15,20 +16,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="he" dir="rtl">
-      <Head>
-        <GoogleTagManager gtmId="GTM-KCD7KWQC" />
-      </Head>
       <body>
         <Navbar />
         {children}
-        <noscript
-          dangerouslySetInnerHTML={{
-            __html: `
-              <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KCD7KWQC"
-              height="0" width="0" style="display:none;visibility:hidden"></iframe>
-            `,
-          }}
-        />
+        <Suspense>
+          <Analytics />
+        </Suspense>
         
         </body>
     </html>
