@@ -1,9 +1,15 @@
 'use client'
 
+import { usePathname } from "next/navigation"
 import { scrollToElement } from "../utils/utils"
 
 const Navbar = () => {
+    const pathname = usePathname();
 
+    if(pathname.includes("review")) {
+        return null
+    }
+    
     return (
         <div className="w-full bg-gray-900 h-16 fixed top-0 z-50 flex justify-center items-center text-white xl:text-xl bg-opacity-50 text-center backdrop-blur-xl">
             <button className="w-28 xl:w-40" onClick={() => scrollToElement("", 0)}>

@@ -133,7 +133,6 @@ export default function Review() {
       />
       <div>
         <div className="text-lg font-bold">תודה שבחרת להוסיף חוות דעת והמלצה על הקורס שעברת בסוזי אקדמי!</div>
-        <div>חוות הדעת הזאת מאוד חשובה לנו לצורכי שיפור.</div>
         <div className="text-sm my-8 p-4 border border-gray-300 rounded-xl">
         <div className="font-bold text-lg underline">
           שיתוף ההמלצה בסושיאל מדיה:
