@@ -185,7 +185,7 @@ export default function Review() {
               src={image}
               height="200"
               width="200"
-              className="rounded-full border-2 border-white outline outline-blue-600"
+              className="rounded-full border-2 border-white outline outline-blue-600 w-40 h-40 object-cover"
             />
              <button
               onClick={() => {
