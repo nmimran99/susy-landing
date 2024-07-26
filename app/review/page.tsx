@@ -27,8 +27,9 @@ export default function Review() {
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
   const handleSubmit = async (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) : Promise<void> => {
-
+    setIsLoading(true);
     if(!verifyFields()) {
+      setIsLoading(false)
       return;
     }
     const fileName = `${Date.now()}-${imageSrc?.name}`;
@@ -228,10 +229,17 @@ export default function Review() {
       <div>
      
       <button
-        disabled={errors.length > 0}
+        disabled={errors.length > 0 || isLoading}
         className="text-lg text-white bg-green-500 rounded-xl py-2 w-40 font-bold my-2 border border-gray-300 shadow disabled:bg-gray-200"
         onClick={handleSubmit}
-      >שלח</button>
+      >
+        {
+          isLoading ? 
+          "שולח..." : 
+          "שלח"
+        }
+
+      </button>
       </div>
     </div>
   )
