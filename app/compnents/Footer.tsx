@@ -1,5 +1,6 @@
 'use client'
 
+import Link from "next/link"
 import Actions from "./Actions"
 
 const Footer = () => {
@@ -23,11 +24,14 @@ const Footer = () => {
                 <button className="" onClick={() => scrollTo(4500)}>
                     סטודנטים מספרים
                 </button>
+                
            </div>
            <div>
             <Actions />
            </div>
-           
+           <Link className="cursor-pointer py-2" href="/privacy">
+                מדיניות פרטיות
+            </Link>
         </div>
     )
 }
